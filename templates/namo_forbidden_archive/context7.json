@@ -1,0 +1,14 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "NaMo Forbidden Archive (private/archival)",
+  "description": "Archive of NaMo project (contains sensitive/NSFW content). This configuration tells Context7 to avoid indexing explicit files by default.",
+  "branch": "main",
+  "folders": ["."],
+  "excludeFolders": ["node_modules", "dist", "tests", "archive", "sensitive", "private"],
+  "excludeFiles": ["llms.txt", "secrets.txt", "private_*.md", "*.secret"],
+  "rules": [
+    "Repository contains sensitive and explicit material. Treat as private/archive and do not surface sexual roleplay content.",
+    "Do not include or expose user-identifying or secret data in generated responses."
+  ],
+  "previousVersions": []
+}
